@@ -1,0 +1,57 @@
+{
+  "name": "shiva-quiz",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/oswald": "^5.1.1",
+    "@fontsource/permanent-marker": "^5.1.1",
+    "@fontsource/poppins": "^5.1.1",
+    "@fontsource/righteous": "^5.1.1",
+    "@fontsource/rubik-dirt": "^5.1.1",
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.6",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.6",
+    "@tanstack/react-router": "^1.105.0",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.475.0",
+    "mixpanel-browser": "^2.60.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.6",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@tanstack/router-devtools": "^1.105.0",
+    "@tanstack/router-plugin": "^1.105.0",
+    "@types/mixpanel-browser": "^2.51.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0",
+    "vite-plugin-image-optimizer": "^1.1.8"
+  },
+  "trustedDependencies": [
+    "@swc/core",
+    "esbuild",
+    "sharp"
+  ]
+}
