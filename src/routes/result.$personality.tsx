@@ -41,7 +41,7 @@ function RouteComponent() {
 
   const shareResult = async () => {
     try {
-      const text = `I am like ${result.name} - ${result.title} in Shiva's Squad! Take the quiz to discover your personality: ${window.location.origin}`;
+      const shareText = `I am like ${result.name} - ${result.title} in Shiva's Squad!\n\nTake the quiz to discover your personality: sadhguru.co/shivasquad-quiz`;
       const imageUrl = new URL(result.image, window.location.origin).toString();
 
       // Track share attempt
@@ -60,20 +60,18 @@ function RouteComponent() {
 
           await navigator.share({
             title: "My Shiva Squad Personality",
-            text: text,
-            url: window.location.href,
+            text: shareText,
             files: [imageFile]
           });
         } catch (shareError) {
           // Fallback to sharing without image
           await navigator.share({
             title: "My Shiva Squad Personality",
-            text: text,
-            url: window.location.href,
+            text: shareText
           });
         }
       } else {
-        await navigator.clipboard.writeText(text);
+        await navigator.clipboard.writeText(shareText);
         alert("Result copied to clipboard!");
       }
     } catch (error) {
